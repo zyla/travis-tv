@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="term.js"></script>
+    <script src="http://js.pusher.com/2.2/pusher.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <style>
+    #term-wrapper {
+      position: relative;
+      width: 788px;
+      height: 544px;
+    }
+    #term-wrapper img {
+      position: absolute; top: 0; left: 0;
+      z-index: 100;
+    }
+    .terminal {
+      padding: 10px;
+      margin-left: 79px;
+      margin-top: 70px;
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 15px;
+      display: inline-block;
+    }
+    #term-wrapper.noise .terminal {
+      background: url(noise.gif);
+    }
+    </style>
+  <body>
+    <div id="term-wrapper" class="noise">
+      <img class="tv" src="old_tv.png">
+    </div>
+  </body>
+</html>
